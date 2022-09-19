@@ -16,7 +16,7 @@ namespace LibraryTests
         [Test]
         public void SerializeEquipmentTest()
         {
-            IJsonConvertible equipment = new Equipment(description, hourlyCost);
+            Equipment equipment = new Equipment(description, hourlyCost);
             string actual = equipment.ConvertToJson();
 
             Assert.AreEqual(expected, actual);

@@ -25,7 +25,7 @@ namespace LibraryTests
         {
             Product product = new Product(productDescription, unitCost);
             Equipment equipment = new Equipment(equipmentDescription, hourlyCost);
-            IJsonConvertible step = new Step(product, quantity, equipment, time);
+            Step step = new Step(product, quantity, equipment, time);
 
             string actual = step.ConvertToJson();
 
